@@ -1,5 +1,9 @@
 # Mi-CAT Pages
 
+Mi-CAT is a machine-learning-integrated catastrophe modelling stack built on three layers. First, it learns asset-level vulnerability functions from observed damage data, capturing factors that conventional archetype-based functions ignore. Second, it fuses fragmented multi-source data, such as Earth observation from Google Earth Engine, infrastructure layers and governmental loss databases, into harmonised hazard, exposure and loss bases at the asset and sub-national level. Third, it couples these outputs with macro-fiscal stress-testing models to support budget planning and the prioritisation of prevention. Work so far has focused on the first layer for earthquakes: predicting building damage grades from observed damage data with classical and deep tabular models, including XGBoost, random forests, CatBoost, SAINT and TabNet, combined through ensembling.
+
+Governments use catastrophe models to estimate how much damage a disaster could cause and to plan their budgets for it. A key ingredient is the vulnerability function, which describes how much damage a building suffers at a given intensity of earthquake, flood or storm. Conventional models assume that all buildings of a broad type respond the same way. Mi-CAT instead learns these relationships from damage observed in past disasters and links the results to the financial planning tools governments rely on.
+
 This repository contains the source files for the public Mi-CAT website:
 
 https://ai4drr.github.io/Mi-CAT/
