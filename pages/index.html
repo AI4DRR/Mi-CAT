@@ -265,19 +265,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            <span class="dnerf">Mi-CAT</span> is an ML-integrated catastrophe modelling stack with three integrated
-            layers: (1) AI learns asset-level vulnerability patterns from observed damage data, capturing association
-            factors that archetype-based functions ignore; (2) AI fuses fragmented multi-source data into harmonized
-            hazard, exposure and loss bases at the asset and sub-national level; (3) outputs are coupled with
-            macro-fiscal models for budget planning and prevention prioritization.
+            <span class="dnerf">Mi-CAT</span> is a machine-learning-integrated catastrophe modelling stack built on three layers. 
+            First, it learns asset-level vulnerability functions from observed damage data, capturing factors that conventional 
+            archetype-based functions ignore. Second, it fuses fragmented multi-source data, such as Earth observation from 
+            Google Earth Engine, infrastructure layers and governmental loss databases, into harmonised hazard, exposure and 
+            loss bases at the asset and sub-national level. Third, it couples these outputs with macro-fiscal stress-testing 
+            models to support budget planning and the prioritisation of prevention. Work so far has focused on the first layer 
+            for earthquakes: predicting building damage grades from observed damage data with classical and deep tabular models, 
+            including XGBoost, random forests, CatBoost, SAINT and TabNet, combined through ensembling.
           </p>
           <p>
-            We use machine learning to learn asset-level vulnerability functions from observed damage data (Random
-            Forests, gradient boosting, generalized additive models) and to fuse multi-source data &mdash; Earth
-            observation via Google Earth Engine, infrastructure layers, governmental loss databases &mdash; through
-            Gaussian processes and spatial interpolation. Outputs will be coupled with macro-fiscal stress-testing
-            models. Stack: Python (scikit-learn, XGBoost, GeoPandas), R, PostGIS, Oasis LMF, and MCP-enabled
-            cloud-native pipelines for reproducible scaling.
+            Governments use catastrophe models to estimate how much damage a disaster could cause and to plan their budgets for it. 
+            A key ingredient is the vulnerability function, which describes how much damage a building suffers at a given intensity 
+            of earthquake, flood or storm. Conventional models assume that all buildings of a broad type respond the same way. 
+            Mi-CAT instead learns these relationships from damage observed in past disasters and links the results to the financial 
+            planning tools governments rely on.
           </p>
         </div>
       </div>
